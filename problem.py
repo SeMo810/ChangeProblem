@@ -32,8 +32,8 @@ def main():
 		print("Please enter a correct denomination: 1, 5, 10, 25, 50, or 100")
 		sys.exit(-1)
 	cnt = change(amt, denom)
-	str = "The number of ways to make change for ${0:.2f} with the highest denomination of {1} cents is {2}."
-	str = str.format(amt / 100, Changes[denom], cnt)
-	print(str)
+	ans = "The number of ways to make change for ${0:.2f} with the highest denomination of {1} cents is {2}."
+	ans = ans.format(amt / 100, Changes[denom], cnt)
+	print(ans)
 	
 main()
